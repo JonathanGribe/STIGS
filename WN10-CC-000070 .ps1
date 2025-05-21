@@ -1,6 +1,8 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    WN10-CC-000070 is a Windows 10 security setting that requires Virtualization-Based Security (VBS) to be enabled. 
+    VBS provides additional protection for features like Credential Guard and code integrity, helping prevent unauthorized access and malware attacks.
+
 
 .NOTES
     Author          : Jonathan Gribe
