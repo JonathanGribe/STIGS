@@ -1,6 +1,8 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+   WN10-CC-000145 is a Windows 10 security setting that requires users to enter a password when resuming from sleep (on battery). 
+   This ensures authentication is always required, preventing unauthorized access when a device wakes up
+
 
 .NOTES
     Author          : Jonathan Gribe
