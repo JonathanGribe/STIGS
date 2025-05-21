@@ -1,5 +1,8 @@
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+   WN10-CC-000038 is a Windows 10 security setting that requires WDigest Authentication to be disabled. 
+   When enabled, WDigest stores plain-text passwords in memory, making them vulnerable to theft. 
+   Since Windows 10 disables WDigest by default, this setting ensures it remains off to prevent security risk
+
 
 .NOTES
     Author          : Jonathan Gribe
