@@ -1,6 +1,9 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    WN10-CC-000370 is a Windows 10 security setting that disables convenience PIN sign-in for domain users. 
+    This prevents users from logging in with a simple PIN instead of a password, reducing the risk of credential theft. 
+    The policy ensures stronger authentication methods are used for security
+
 
 .NOTES
     Author          : Jonathan Gribe
