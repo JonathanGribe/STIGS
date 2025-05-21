@@ -1,6 +1,7 @@
 <#
 .SYNOPSIS
-   STIG WN10-SO-000245 is a security setting for Windows 10 that ensures the built-in Administrator account runs in Admin Approval Mode. This helps prevent unauthorized changes by requiring approval for elevated actions. It’s a security measure to limit risks from unrestricted admin privileges
+   STIG WN10-SO-000245 is a security setting for Windows 10 that ensures the built-in Administrator account runs in Admin Approval Mode. 
+   This helps prevent unauthorized changes by requiring approval for elevated actions. It’s a security measure to limit risks from unrestricted admin privileges
 
 
 .NOTES
