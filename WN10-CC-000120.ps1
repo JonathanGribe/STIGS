@@ -1,6 +1,8 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    WN10-CC-000120 is a Windows 10 security setting that removes the network selection UI from the logon screen. 
+    This prevents users from changing network connections before signing in, reducing security risks related to unauthorized access.
+
 
 .NOTES
     Author          : Jonathan Gribe
