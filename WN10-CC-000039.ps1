@@ -1,6 +1,9 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+   WN10-CC-000039 is a Windows 10 security setting that removes the "Run as different user" option from context menus. 
+   This prevents users from running applications with different credentials, reducing the risk of credential theft in standard user sessions. 
+   Disabling this feature helps protect privileged accounts from unauthorized access
+
 
 .NOTES
     Author          : Jonathan Gribe
