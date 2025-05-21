@@ -1,5 +1,7 @@
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    WN10-CC-000040 is a Windows 10 security setting that disables insecure guest logons for SMB servers. 
+    This prevents unauthenticated access to shared folders, ensuring that all shared resources require proper authentication. 
+
 
 .NOTES
     Author          : Jonathan Gribe
