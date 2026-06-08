@@ -2,17 +2,20 @@
 
 ## STIG Audit Failure
 
-![STIG Audit Failure](image001.png)
+<img width="975" height="358" alt="image" src="https://github.com/user-attachments/assets/3469e1b6-bbfd-46e3-9715-83feb6c918da" />
+
 
 ## STIG Information
 
-![STIG Information](image002.png)
+<img width="794" height="699" alt="image" src="https://github.com/user-attachments/assets/3dba2d12-2b25-45df-ac32-239f1df991fe" />
+
 
 ## Findings
 
 When opening the registry path `SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest`, the value name `UseLogonCredential` could not be located.
 
-![Findings Screenshot](image003.png)
+<img width="975" height="610" alt="image" src="https://github.com/user-attachments/assets/c3f98ee1-810c-4b9a-b9e9-007ae21eed29" />
+
 
 ## Manual Fix
 
