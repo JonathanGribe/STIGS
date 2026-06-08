@@ -29,7 +29,8 @@ Set the policy to:
 
 Applied fix as per the instructions above.
 
-![Manual Fix Screenshot](image004.jpg)
+<img width="975" height="393" alt="image" src="https://github.com/user-attachments/assets/9c238992-889d-4690-b8c7-2752769b783f" />
+
 
 ## PowerShell Fix
 
