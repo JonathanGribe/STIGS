@@ -1,12 +1,47 @@
 
 # Stig: WN10-AU-000500
 
+# Event Log Application MaxSize Remediation
 
-<img width="975" height="573" alt="image" src="https://github.com/user-attachments/assets/5b189c97-697a-458c-ad29-1abc2afc81ff" />
+## Evidence / Screenshots
 
+> The original Word document includes several screenshots. Replace the placeholders below with uploaded image paths after adding the images to your GitHub repository.
 
-<img width="975" height="262" alt="image" src="https://github.com/user-attachments/assets/78d8df99-4d99-443b-8546-82292aa08e2b" />
+![Screenshot 1](images/screenshot-1.png)
 
-<img width="975" height="511" alt="image" src="https://github.com/user-attachments/assets/19035fc1-e609-4a39-b7c7-e1f3f2685220" />
+![Screenshot 2](images/screenshot-2.png)
 
-<img width="975" height="506" alt="image" src="https://github.com/user-attachments/assets/04617936-8496-42a5-a6b2-72291c8e2fe8" />
+![Screenshot 3](images/screenshot-3.png)
+
+![Screenshot 4](images/screenshot-4.png)
+
+![Screenshot 5](images/screenshot-5.png)
+
+## Post Manual Remediation
+
+![Screenshot 6](images/screenshot-6.png)
+
+Deleted the manual fix.
+
+Re-ran to make sure it failed again.
+
+## PowerShell Fix
+
+Implemented PowerShell fix:
+
+```powershell
+# Define the registry path and value
+$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
+$registryValue = "MaxSize"
+$registryData = 0x8000
+
+# Check if the registry path exists, and create it if necessary
+if (-not (Test-Path $registryPath)) {
+    New-Item -Path $registryPath -Force
+}
+
+# Set the registry value
+Set-ItemProperty -Path $registryPath -Name $registryValue -Value $registryData -Type DWord
+
+# Confirm the change
+Write-Output "Registry key '$registryPath' has been updated with '$registryValue' = $registryData"
