@@ -1,6 +1,6 @@
 # STIG Implementation: WN10-CC-000039
 
-## Initial Scan Results
+## 1. Initial Scan Results
 
 **Status:** Failed
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Gathering Information
+## 2. Gathering Information
 
 ### STIG Information
 
@@ -20,19 +20,25 @@
 
 ### Info
 
+```text
 The **Run as different user** selection from context menus allows the use of credentials other than the currently logged-on user.
 
-Using privileged credentials in a standard user session can expose those credentials to theft. Removing this option from context menus helps prevent this from occurring.
+Using privileged credentials in a standard user session can expose those credentials to theft. 
+Removing this option from context menus helps prevent this from occurring.
+```
 
-### Solution
+### Solution (from Stig-A-View)
 
 **Configure the policy value for:**
 
+```text
 Configure the policy value for Computer Configuration >> Administrative Templates >> MS Security Guide >> "Remove "Run as Different User" from context menus" to "Enabled".
 
 This policy setting requires the installation of the SecGuide custom templates included with the STIG package. "SecGuide.admx" and "SecGuide.adml" must be copied to the \Windows\PolicyDefinitions and \Windows\PolicyDefinitions\en-US directories respectively.
 
-**Manual Solution:**
+```
+
+## 3.  **Manual Solution:**
 Unable to locate MS Security Guide so needed to install the Security Compliance Toolkit
 Once downloaded via the website:
 Extract the folder in downloads:
@@ -62,7 +68,7 @@ Passed scan:
 
 Then disable that setting and rescan to get a failed status
 
-**Remediate again with Powershell:**
+## **4. Remediate again with Powershell:**
 
 ```kql
 # Define registry paths
