@@ -1,0 +1,71 @@
+# Stig Report Template
+
+
+
+# STIG Implementation:  
+
+## 1. Initial Scan Results
+
+**Status:** Failed
+
+> Note the failed STIG finding.
+
+
+
+
+
+---
+
+## 2. Gathering Information
+
+### STIG Information
+
+**STIG:** 
+**Reference:** 
+
+### Info
+
+```text
+
+
+```
+
+### Solution (from Stig-A-View)
+
+**Configure the policy value for:**
+
+```text
+
+If the system is configured to send audit records directly to an audit server, this is NA. This must be documented with the ISSO.
+
+Configure the policy value for Computer Configuration >> Administrative Templates >> Windows Components >> Event Log Service >> Application >> "Specify the maximum log file size (KB)" to "Enabled" with a "Maximum Log Size (KB)" of "32768" or greater.
+
+```
+
+**Location/Check:**
+
+```text
+
+
+
+```
+
+## 3.  **Manual Solution:**
+
+***Navigated to the location as indicated in the Stig information above**
+***Performed the operations required to remediate the stig**
+
+
+
+***Re-ran the Tenable scan.  Stig was resolved.***
+
+
+
+
+## **4. Remediate again with Powershell:**
+
+```kql
+
+
+```
+
